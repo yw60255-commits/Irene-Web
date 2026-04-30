@@ -941,6 +941,41 @@ footer {
   font-size: var(--text-caption);
 }
 
+/* Expandable details styling */
+.resume-expandable {
+  margin: 0;
+  padding: 0;
+}
+
+.resume-expand-trigger {
+  cursor: pointer;
+  display: inline-block;
+  margin: var(--space-3) 0 var(--space-4);
+  padding: var(--space-2) var(--space-4);
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-caption);
+  color: var(--color-accent);
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.resume-expand-trigger:hover {
+  background: var(--color-line);
+  color: var(--color-accent-hover);
+}
+
+.resume-expandable[open] .resume-expand-trigger {
+  background: var(--color-accent);
+  color: var(--color-surface);
+  border-color: var(--color-accent);
+}
+
+.resume-expandable[open] > div {
+  margin-top: var(--space-4);
+}
+
 @media (max-width: 980px) {
   .resume-hero-grid,
   .resume-body-grid,
