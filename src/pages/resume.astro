@@ -1,0 +1,341 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="简历 | Irene Web"
+  description="王逸凡的个人简历、教育背景、经历、研究兴趣与技能。"
+>
+  <section class="resume-hero">
+    <div class="resume-hero-grid">
+      <div class="resume-hero-main">
+        <div class="resume-topbar">
+          <p class="resume-hero-kicker">Resume / Profile</p>
+          <div class="button-row resume-top-actions">
+            <a
+              class="btn btn-secondary"
+              href="/assets/pdf/resume-cn.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              中文 PDF
+            </a>
+            <a
+              class="btn btn-primary"
+              href="/assets/pdf/resume-en.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              English PDF
+            </a>
+          </div>
+        </div>
+
+        <div class="resume-name-row">
+          <h1 class="resume-hero-name">王逸凡</h1>
+          <p class="resume-hero-en">WANG Yifan</p>
+        </div>
+
+        <div class="resume-intro-lines">
+          <p>
+            <strong>专业摘要</strong> 建筑学与可持续硕士，专注智慧城市 BIM+AI 解决方案；精通机器学习驱动数字孪生技术，应用于城市活力分析与建筑性能评估；致力于数据智能赋能绿色建筑与城市精细治理。
+          </p>
+        </div>
+      </div>
+
+      <div class="resume-hero-side">
+        <div class="resume-portrait-card">
+          <img
+            src="/assets/images/resume-profile.jpg"
+            alt="王逸凡的个人照片或代表性视觉图"
+            width="900"
+            height="1100"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="resume-body">
+    <div class="resume-body-grid">
+      <aside class="resume-info-column">
+        <div class="resume-info-card">
+          <p class="resume-card-title">基本信息</p>
+          <ul class="resume-meta-list">
+            <li><span>所在地</span><strong>香港 Hong Kong</strong></li>
+            <li><span>研究方向</span><strong>建筑环境与可持续性</strong></li>
+            <li><span>语言</span><strong>中文 / English</strong></li>
+          </ul>
+        </div>
+
+        <div class="resume-info-card">
+          <p class="resume-card-title">联系方式</p>
+          <ul class="resume-link-list">
+            <li><span class="resume-meta-label">电话</span> <a href="tel:+8613588580057">+86 13588580057</a> / <a href="tel:+85284964286">+852 84964286</a></li>
+            <li><a href="mailto:yw60255@gmail.com">yw60255@gmail.com</a></li>
+            <li><a href="mailto:ywang6926@163.com">ywang6926@163.com</a></li>
+          </ul>
+        </div>
+
+        <div class="resume-info-card">
+          <p class="resume-card-title">研究关键词</p>
+          <div class="resume-tags">
+            <span class="resume-tag">Smart Cities</span>
+            <span class="resume-tag">BIM+AI</span>
+            <span class="resume-tag">Digital Twin</span>
+            <span class="resume-tag">Sustainability</span>
+            <span class="resume-tag">Urban Analytics</span>
+            <span class="resume-tag">Building Performance</span>
+          </div>
+        </div>
+
+        <div class="resume-info-card resume-mini-visual">
+          <p class="resume-card-title">Selected View</p>
+          <img
+            src="/assets/images/resume-secondary.jpg"
+            alt="辅助视觉图片"
+            width="800"
+            height="600"
+          />
+        </div>
+      </aside>
+
+      <div class="resume-content-column">
+        <section class="resume-block">
+          <div class="resume-block-head">
+            <p class="resume-block-index">01</p>
+            <h2>专业摘要</h2>
+          </div>
+          <div class="resume-block-content text-block">
+            <ul class="resume-summary-list">
+              <li>建筑学与可持续硕士，专注智慧城市 BIM+AI 解决方案</li>
+              <li>精通机器学习驱动数字孪生技术，应用于城市活力分析与建筑性能评估</li>
+              <li>致力于数据智能赋能绿色建筑与城市精细治理</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="resume-block">
+          <div class="resume-block-head">
+            <p class="resume-block-index">02</p>
+            <h2>个人简介</h2>
+          </div>
+          <div class="resume-block-content text-block">
+            <p>
+              我目前在香港城市大学攻读土木与建筑工程（建筑环境与可持续方向）硕士学位。本科阶段在海南大学与天津大学接受建筑学训练。
+              我的兴趣集中在智慧建筑、数字孪生、城市尺度数据分析与建筑性能优化之间的交叉位置，
+              致力于通过 BIM、AI 与数据分析技术赋能绿色建筑与城市精细治理。
+            </p>
+          </div>
+        </section>
+
+        <section class="resume-block">
+          <div class="resume-block-head">
+            <p class="resume-block-index">03</p>
+            <h2>教育背景</h2>
+          </div>
+          <div class="resume-block-content resume-entry-list">
+            <article class="resume-entry">
+              <div class="resume-entry-top">
+                <h3>香港城市大学</h3>
+                <p class="resume-entry-time">2025.09–2026.10</p>
+              </div>
+              <p class="resume-entry-sub">土木与建筑工程（建筑环境与可持续方向）| 理学硕士</p>
+              <p class="resume-entry-text">
+                毕业论文：Cluster Analysis of Regional Vitality Based on Multi-dimensional Characteristics【AI+机器学习】
+                （运用 K-Means 聚类算法，从多源城市数据中识别活力模式，为空间决策提供量化依据）
+              </p>
+            </article>
+
+            <article class="resume-entry">
+              <div class="resume-entry-top">
+                <h3>海南大学</h3>
+                <p class="resume-entry-time">2020.09–2025.06</p>
+              </div>
+              <p class="resume-entry-sub">建筑学 | 工学学士</p>
+              <p class="resume-entry-text">
+                GPA: 3.82/4.0 | 排名: 1/58 | 毕业设计: 乐龄共享——社区医院建筑设计
+                <br/>荣誉: 2025 海南大学年度榜样人物、2025 优秀毕业设计、2024 特等综合奖学金、2021 学业优秀奖学金（前 1%）
+              </p>
+            </article>
+
+            <article class="resume-entry">
+              <div class="resume-entry-top">
+                <h3>天津大学</h3>
+                <p class="resume-entry-time">2021.08–2023.06</p>
+              </div>
+              <p class="resume-entry-sub">建筑学 | "3+2 联合培养"</p>
+              <p class="resume-entry-text">
+                交换 GPA: 3.72/4.0
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="resume-block">
+          <div class="resume-block-head">
+            <p class="resume-block-index">04</p>
+            <h2>荣誉奖项</h2>
+          </div>
+          <div class="resume-block-content resume-entry-list">
+            <article class="resume-entry">
+              <div class="resume-entry-top">
+                <h3>2025 海南大学年度榜样人物</h3>
+                <p class="resume-entry-time">2025</p>
+              </div>
+            </article>
+
+            <article class="resume-entry">
+              <div class="resume-entry-top">
+                <h3>2025 优秀毕业设计</h3>
+                <p class="resume-entry-time">2025</p>
+              </div>
+            </article>
+
+            <article class="resume-entry">
+              <div class="resume-entry-top">
+                <h3>2024 特等综合奖学金</h3>
+                <p class="resume-entry-time">2024</p>
+              </div>
+            </article>
+
+            <article class="resume-entry">
+              <div class="resume-entry-top">
+                <h3>2021 学业优秀奖学金（前 1%）</h3>
+                <p class="resume-entry-time">2021</p>
+              </div>
+            </article>
+
+            <article class="resume-entry">
+              <div class="resume-entry-top">
+                <h3>浙江省自然资源科学技术奖一等奖（参与项目）</h3>
+                <p class="resume-entry-time">2025</p>
+              </div>
+              <p class="resume-entry-text">瑞安古城智慧建筑平台 - 参与 BIM 模型处理与数字孪生构建</p>
+            </article>
+
+            <article class="resume-entry">
+              <div class="resume-entry-top">
+                <h3>浙江省优秀测绘地理信息工程奖铜奖（参与项目）</h3>
+                <p class="resume-entry-time">2025</p>
+              </div>
+              <p class="resume-entry-text">宁波海曙区倾斜三维数据建设及场景应用项目 - 参与实景三维建模与数据处理</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="resume-block">
+          <div class="resume-block-head">
+            <p class="resume-block-index">05</p>
+            <h2>实习与项目经历</h2>
+          </div>
+          <div class="resume-block-content resume-entry-list">
+            <article class="resume-entry">
+              <div class="resume-entry-top">
+                <h3>宝略科技 - 智慧建筑（BIM）事业部实习生</h3>
+                <p class="resume-entry-time">2025.07–2025.08</p>
+              </div>
+              <p class="resume-entry-sub">智慧建筑数据平台开发 - 瑞安古城智慧建筑平台</p>
+              <p class="resume-entry-text">
+                • 主导 BIM 模型、IoT 业务数据清洗/对齐/轻量化集成，开发 Revit+3ds Max 实时三维可视化系统，构建项目数字孪生统一底座。
+                <br/>• 高效产出 Lumion 高清效果图+漫游视频，作为关键汇报材料，直接支撑项目获浙江省自然资源科学技术奖一等奖。
+                <br/>• 配合团队多维度分析集成能耗数据，识别 3 类高耗能空间模式，为绿色建筑星级评估+节能改造提供关键洞察。
+              </p>
+            </article>
+
+            <article class="resume-entry">
+              <div class="resume-entry-top">
+                <h3>宝略科技 - 数字孪生事业部实习生</h3>
+                <p class="resume-entry-time">2025.06–2025.07</p>
+              </div>
+              <p class="resume-entry-sub">实景三维与城市信息模型（CIM）构建 - 宁波海曙区倾斜三维数据建设及场景应用项目</p>
+              <p class="resume-entry-text">
+                • ContextCapture 完成自由网空三解算+精准像控点刺点，模型平面精度达 5cm，满足城市级管理需求。
+                <br/>• 主导 Modelfun 处理超 50km² OSGB 模型，修复优化矢量/POI 数据融合，解决约 15% 空洞与纹理瑕疵。
+                <br/>• 厘米级实景三维模型成功接入区级数字孪生平台，支撑海曙区智慧城管与公共治理场景应用，获浙江省优秀测绘地理信息工程奖铜奖。
+              </p>
+            </article>
+
+            <article class="resume-entry">
+              <div class="resume-entry-top">
+                <h3>华汇工程设计集团 - 建筑部实习生</h3>
+                <p class="resume-entry-time">2024.07–2024.11</p>
+              </div>
+              <p class="resume-entry-sub">市政建筑设计实践</p>
+              <p class="resume-entry-text">
+                • 独立负责专项设计与表达：在"镜湖新区公共厕所"等项目中，独立完成从概念体块推敲（SketchUp）、核心空间效果图渲染到卫生间、无障碍设施等关键节点施工图深化（AutoCAD）的全套工作。
+                <br/>• BIM 协同设计实践：在"环卫工人办公楼"项目中，Revit 建筑主体 BIM 建模，生成协调一致的平面/立面/剖面图+效果图，支持多专业协同。
+              </p>
+            </article>
+
+            <article class="resume-entry">
+              <div class="resume-entry-top">
+                <h3>浙江大学建筑设计研究院 - 建筑创作研究中心实习生</h3>
+                <p class="resume-entry-time">2023.07–2023.09</p>
+              </div>
+              <p class="resume-entry-sub">文化建筑设计与研究</p>
+              <p class="resume-entry-text">
+                • 研究与设计联动：深度参与"陆游故里"文化建筑项目，通过实地调研与文献梳理，提炼文化意象，并将其进行空间转译；构建建筑体量模型并渲染关键空间效果图；负责项目方案文本部分撰写、排版及对应图纸的整合工作。
+                <br/>• 多项目并行产出：负责青藤故居宿舍、绍兴震源堂地铁站、温州电厂多个项目的体量模型搭建、效果图渲染、施工图的绘制与深化及方案文本排版，在快节奏下同时支撑多个项目节点的图纸输出任务。
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="resume-block">
+          <div class="resume-block-head">
+            <p class="resume-block-index">06</p>
+            <h2>技能储备</h2>
+          </div>
+          <div class="resume-block-content">
+            <article class="resume-skill-category">
+              <h3 class="resume-skill-title">数据分析与智能技术</h3>
+              <p class="resume-skill-text">
+                • 数据分析：掌握 Python 进行数据清洗与分析；具备机器学习基础，熟练应用聚类分析等方法（应用于城市活力研究）。
+                <br/>• AI 应用：精通 Stable Diffusion 进行建筑概念生成与场景可视化。
+              </p>
+            </article>
+
+            <article class="resume-skill-category">
+              <h3 class="resume-skill-title">建筑数字化与平台技术</h3>
+              <p class="resume-skill-text">
+                • BIM 与数字孪生：精通 BIM 全流程协同设计与管理 (Revit)；具备数字孪生场景搭建与 IoT 数据集成经验。
+                <br/>• 实景三维与测绘：熟练运用 ContextCapture 进行实景三维建模；精通使用 Modelfun 等工具进行 OSGB/OBJ 模型修复、优化与多源数据整合。
+              </p>
+            </article>
+
+            <article class="resume-skill-category">
+              <h3 class="resume-skill-title">数字化设计与表现</h3>
+              <p class="resume-skill-text">
+                • 三维建模：熟练使用 Rhino、SketchUp、Revit、AutoCAD。
+                <br/>• 渲染与可视化：熟练运用 V-Ray、Lumion、Enscape、3ds Max 进行高质量渲染与动画制作。
+                <br/>• 设计表达：精通 Photoshop、InDesign 用于图面处理与方案文本排版。
+              </p>
+            </article>
+
+            <article class="resume-skill-category">
+              <h3 class="resume-skill-title">艺术表现力</h3>
+              <p class="resume-skill-text">
+                • 手绘表达：建筑透视/手绘概念草图，快速设计沟通。
+                <br/>• 建筑摄影：专业构图/后期处理，用于项目记录与方案呈现。
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="resume-block">
+          <div class="resume-block-head">
+            <p class="resume-block-index">07</p>
+            <h2>研究兴趣</h2>
+          </div>
+          <div class="resume-block-content text-block">
+            <p>
+              可持续建成环境、智慧建筑与城市尺度数据分析、机器学习驱动的城市活力评估、建筑性能优化、
+              以及通过数字媒介建立长期个人知识归档的方式。
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
