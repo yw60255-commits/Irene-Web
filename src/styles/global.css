@@ -277,14 +277,19 @@ p {
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-template-columns: 1fr;
   gap: var(--token-gap-desktop);
 }
 
-@media (max-width: 720px) {
+@media (min-width: 768px) {
   .card-grid {
-    grid-template-columns: 1fr;
-    gap: var(--token-gap-mobile);
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1280px) {
+  .card-grid {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -560,10 +565,10 @@ p {
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
   gap: var(--space-3);
-  min-height: 120px;
+  min-height: 180px;
   padding: 18px;
   border: 1px solid rgba(22, 21, 20, 0.06);
-  border-radius: 8px;
+  border-radius: 6px;
   background: rgba(255, 255, 255, 0.92);
   box-shadow: var(--shadow-soft);
   position: relative;
