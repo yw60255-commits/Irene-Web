@@ -62,38 +62,32 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     </section>
 
     <section class="home-about" aria-labelledby="home-about-title">
-      <div class="home-about-grid">
-        <div class="home-about-copy">
-          <h2 id="home-about-title">About me</h2>
-          <p>
-            我关心设计、技术、AI 与智能环境交汇的地方，也持续观察空间、系统与人的关系如何被重新组织。
-          </p>
-          <p>
-          I am fascinated by the intersection of design, technology, AI and intelligent environments, and I keep observing how the relationships among space, systems and people are being restructured.
-          </p>
-          <p>
-            作品、实验、研究与书写，对我来说是同一件事的不同切面。
-          </p>
-          <p>
-            Works, experiments, research and writing are different facets of one and the same thing to me.
-          </p>
-          <p>
-            这里既展示结果，也保留过程——一些仍在生长中的方法、判断与感受。
-          </p>
-          <p>
-            It presents both outcomes and preserves the process — methodologies, judgments, and sensibilities still in the making.
-          </p>
-        </div>
-
-        <div class="home-about-side">
-          <div class="home-about-card">
-            <p class="home-about-label">Focus：Design / AI / Smart Environments / Research</p>
+      <div class="home-about-copy">
+        <h2 id="home-about-title" class="about-title">About me</h2>
+        <div class="about-pairs">
+          <div class="about-pair">
+            <p class="cn">我关心设计、技术、AI 与智能环境交汇的地方，也持续观察空间、系统与人的关系如何被重新组织。</p>
+            <p class="en">I am fascinated by the intersection of design, technology, AI and intelligent environments, and I keep observing how the relationships among space, systems and people are being restructured.</p>
+          </div>
+          <div class="about-pair">
+            <p class="cn">作品、实验、研究与书写，对我来说是同一件事的不同切面。</p>
+            <p class="en">Works, experiments, research and writing are different facets of one and the same thing to me.</p>
+          </div>
+          <div class="about-pair">
+            <p class="cn">这里既展示结果，也保留过程——一些仍在生长中的方法、判断与感受。</p>
+            <p class="en">It presents both outcomes and preserves the process — methodologies, judgments, and sensibilities still in the making.</p>
           </div>
         </div>
-        <div class="home-about-actions">
-            <a class="home-inline-link" href="/resume">查看简历</a>
-          </div>
       </div>
+
+      <div class="home-about-side">
+        <div class="home-about-card">
+          <p class="home-about-label">Focus：Design / AI / Smart Environments / Research</p>
+        </div>
+      </div>
+      <div class="home-about-actions">
+          <a class="home-inline-link" href="/resume">查看简历</a>
+        </div>
     </section>
   </div>
   <script type="module" src="/src/scripts/aria-audit.js"></script>
