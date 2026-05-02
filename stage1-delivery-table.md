@@ -22,11 +22,15 @@
 |---|---|---|---|---|---|---|---|---|---|---|
 | Hero/CTA | Hero 文案与 CTA 间距未统一 | Hero/CTA 文案和 CTA 间距已统一，间距 24px | 统一 Hero 文案、CTA 间距，确保视觉层级 | design-tokens-stage1.json | heroCTA.gap、colors、typography | 现状未统一 → 统一后间距与文案 | 高 | 对比图、可访问性检查、演示样例 | phase-1-baseline.md / 风格草案 | 需要确保与品牌风格对齐 |
 | Card Grid | Card Grid 的桌面与移动端间距不一致 | 桌面 16px、移动端 12px，统一网格间距 | 统一网格间距，确保对齐 | design-tokens-stage1.json | gridDesktopGap、mobileGap | 不统一 → 统一 | 中 | 布局对比、网格对齐演示 | Tokens 与实现样例 |
+  
+| 导航/页头 深化微调 | hover、active、focus 三态区分明确但保持现有颜色边界 | hover: 背景微调、active: 边框轻增、focus: 2px accent 轮廓 | 三态区分但不增加新颜色层级 | design-tokens-stage1.json | nav.itemState、focus.outline、colors | 现状三态对比 -> 深化但不增新颜色层级 | 高 | 可访问性测试、演示样例、键盘导航测试 | Tokens 与实现样例 |
+| 表单控件微调 | 字段间距、标签与输入间距统一；错误文本距离统一 | 保持桌面与移动端统一节奏，8px 边界线不新增 | 统一节奏与对齐；错误信息可见性增强 | design-tokens-stage1.json | form.fieldGap、form.labelToInput、form.errorToField | 不一致 → 统一 | 高 | 表单可访问性检查、错误提示演练 | 表单样式草案 |
 | 导航/页头 | 导航项高度和间距未严格统一 | 导航项高度 36–40px，项间距 8px，header 内边距 12px/16px | 标尺化导航尺寸与间距 | design-tokens-stage1.json | nav.itemHeight、spacing、colors | 不统一 → 统一 | 高 | 可访问性测试、可用性演示 | Tokens 与实现样例 |
 | 卡片网格 | 桌面/移动端间距不一致 | 桌面 gap 16px，移动端 gap 12px | 统一网格间距，确保对齐 | design-tokens-stage1.json | cardGrid.desktopGap、cardGrid.mobileGap | 不统一 → 统一 | 中/高 | 布局对比图、样式对比 | 组件样例 |
 | 表单控件 | 字段间距、标签与输入间距不一致 | 字段间距 16px，label–input 8px，错误信息 6–8px | 提升表单一致性和可读性 | design-tokens-stage1.json | form.fieldGap、form.labelToInput、form.errorToField | 不一致 → 统一 | 高 | 表单可访问性检查、错误提示可见性测试 | 表单样式草案 |
 | 全局焦点 | 焦点样式不统一 | 统一焦点轮廓 2px，accent 颜色 | 对焦点统一化以提升可访问性与美观 | design-tokens-stage1.json | focus.outline | 不统一 → 统一 | 高 | 焦点可见性测试 | 焦点样式规范 |
 | ARIA 要点 | icon-only 按钮缺少 aria-label | icon-only 按钮需 aria-label；错误信息 aria-describedby | ARIA 规范全面覆盖 | design-tokens-stage1.json | aria.iconButtonHasAriaLabel、aria.errorDescribe | 未完全覆盖 → 全部覆盖 | 高 | ARIA 检查清单 | ARIA 使用规范 |
+| ARIA 审核结果 | 本批次已在页面内输出 ARIA 审核面板，记录关键要点 | 面板显示在页面底部或右下角，包含 icon-button aria-label、显式 label、aria-describedby 的落地情况 | 将 ARIA 审核结果作为交付的一部分留存 | - | - | - | 高 | 面板内容核对与验收 | ARIA 审核结果面板文本 | 已落地并供验收核对 |
 | 品牌要素 | 现阶段素材不足，统一风格需要素材 | 待补充 Logo/图标素材 | 品牌统一性提升 | design-tokens-stage1.json | 品牌相关 | 不足 → 补充素材 | 中 | 风格对齐演示、素材清单 |
 
 表格 2：Tokens 草案（示例字段）

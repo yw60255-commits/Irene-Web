@@ -52,6 +52,9 @@
       "gap": 24
     },
     "nav": {
+      "hoverBg": "rgba(255,255,255,0.78)",
+      "activeBg": "rgba(255,255,255,0.88)",
+      "focusOutline": "#2F80ED",
       "itemHeight": 38
     },
     "cardGrid": {
