@@ -277,11 +277,17 @@ p {
 
 .card-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(4, minmax(240px, 1fr));
   gap: var(--token-gap-desktop);
 }
 
-@media (min-width: 768px) {
+@media (max-width: 767px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
   .card-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -914,9 +920,11 @@ form > input, form > textarea, form > select {
 /* Explicit form control styles for consistent rhythm across breakpoints */
 .form-control {
   width: 100%;
-  padding: 8px 12px;
+  height: 44px;
+  padding: 0 12px;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 6px;
+  box-sizing: border-box;
 }
 .form-error {
   color: #d00;
