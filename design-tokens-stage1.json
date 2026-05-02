@@ -1,0 +1,67 @@
+{
+  "colors": {
+    "primary": "#243B53",
+    "neutral": "#E9EDF2",
+    "accent": "#2F80ED",
+    "surface": "#FFFFFF",
+    "text": "#111111"
+  },
+  "typography": {
+    "baseFontSize": 16,
+    "heading": {
+      "h1": 20,
+      "h2": 28,
+      "h3": 34
+    },
+    "lineHeights": {
+      "body": 1.6,
+      "heading": 1.12,
+      "caption": 1.4
+    }
+  },
+  "spacing": {
+    "base": 8,
+    "gapDesktop": 16,
+    "gapMobile": 12
+  },
+  "radii": {
+    "sm": 4,
+    "md": 6,
+    "lg": 8
+  },
+  "shadows": {
+    "soft": "0 1px 3px rgba(0,0,0,0.08)",
+    "card": "0 4px 12px rgba(0,0,0,0.12)"
+  },
+  "motion": {
+    "durationMs": 180,
+    "timingFunction": "ease-in-out"
+  },
+  "focus": {
+    "outlineWidth": 2,
+    "outlineColor": "#2F80ED",
+    "offset": 2
+  },
+  "aria": {
+    "iconButtonHasAriaLabel": true,
+    "formFieldsHaveLabels": true,
+    "errorDescribe": true
+  },
+  "components": {
+    "heroCTA": {
+      "gap": 24
+    },
+    "nav": {
+      "itemHeight": 38
+    },
+    "cardGrid": {
+      "desktopGap": 16,
+      "mobileGap": 12
+    },
+    "form": {
+      "fieldGap": 16,
+      "labelToInput": 8,
+      "errorToField": [6, 8]
+    }
+  }
+}

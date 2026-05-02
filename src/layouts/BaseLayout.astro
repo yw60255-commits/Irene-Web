@@ -7,29 +7,53 @@ interface Props {
 }
 
 const {
-  title = "Irene Web",
-  description = "Architecture portfolio and resume website."
+  title = "Irene Wang — Ongoing Practice",
+  description = "Design, AI, smart environments, and ongoing curiosities. 这里不仅有作品、项目与研究，也有我持续展开的实践与观察。"
 } = Astro.props;
+
+const currentPath = new URL(Astro.request.url).pathname;
+
+const navItems = [
+  { label: "Home", href: "/" },
+  { label: "Resume", href: "/resume" },
+  { label: "Design", href: "/design" },
+  { label: "Projects", href: "/projects" },
+  { label: "AI", href: "/ai" },
+  { label: "Research", href: "/research" }
+];
+
+const isActive = (href: string) => {
+  if (href === "/") {
+    return currentPath === "/" || currentPath === "";
+  }
+  return currentPath.startsWith(href);
+};
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#fcfcfa" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>{title}</title>
   </head>
   <body>
     <header class="site-header">
       <div class="container header-inner">
-        <a class="site-logo" href="/">Irene</a>
-        <nav class="site-nav">
-          <a href="/">Home</a>
-          <a href="/projects">Projects</a>
-          <a href="/resume">Resume</a>
-          <a href="/about">About</a>
+        <a class="site-logo" href="/">
+          <span class="site-logo-main">Irene</span>
+          <span class="site-logo-sub">WANG Yifan</span>
+        </a>
+
+        <nav class="site-nav" aria-label="Primary">
+          {navItems.map((item) => (
+            <a href={item.href} class={isActive(item.href) ? "active" : ""}>
+              {item.label}
+            </a>
+          ))}
         </nav>
       </div>
     </header>
@@ -42,7 +66,11 @@ const {
 
     <footer class="site-footer">
       <div class="container footer-inner">
-        <p>© 2026 Irene. Portfolio in progress.</p>
+        <div class="footer-brand">
+          <p class="footer-name">WANG Yifan - Irene</p>
+          <p class="footer-text">Design, AI, smart environments, and ongoing curiosities.</p>
+        </div>
+        <p class="footer-copy">© 2026 Irene. Personal website in progress.</p>
       </div>
     </footer>
   </body>

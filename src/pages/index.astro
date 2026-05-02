@@ -3,61 +3,113 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout
-  title="Irene Web"
-  description="Architecture portfolio, selected works, and resume."
+  title="Irene Wang — Ongoing Practice"
+  description="Design, AI, smart environments, and ongoing curiosities. "
 >
-  <section class="hero">
-    <h1>Irene’s selected works and ongoing archive.</h1>
-    <p>
-      Architecture portfolio, research fragments, and professional materials.
-      This website is built as a long-term personal archive rather than a temporary job-hunting page.
-    </p>
-  </section>
+  <div class="home">
+    <section class="home-hero">
+      <div class="home-hero-copy">
+        <p class="home-kicker">PERSONAL WEBSITE / WORK / EXPERIMENTS / RESEARCH</p>
 
-  <section class="section">
-    <p class="section-title">Selected Projects</p>
-    <div class="project-list">
-      <article class="project-card">
-        <div class="project-year">2025</div>
-        <div>
-          <h3>Project One</h3>
+        <h1 class="home-title">
+          <span>Irene Wang</span>
+        </h1>
+        <h1 class="home-title">
+          <span>— Ongoing Practice</span>
+        </h1>
+
+        <p class="home-lead">
+         <span class="home-lead-en">
+            Design, AI, smart environments, and ongoing curiosities.
+          </span>
+        
+        </p>
+      </div>
+    </section>
+
+    <section class="home-entry-grid" aria-label="Main content paths">
+      <a class="entry-card" href="/design">
+        <div class="entry-card-top">
+          <p class="entry-card-meta">Design work</p>
+          <span class="entry-card-icon" aria-hidden="true">↗</span>
+        </div>
+        <div class="entry-card-body">
+          <h2>设计作品</h2>
+          <p>Spatial, visual, interface, and concept-driven design work.</p>
+        </div>
+        <span class="entry-card-cta">进入页面</span>
+      </a>
+
+      <a class="entry-card" href="/projects">
+        <div class="entry-card-top">
+          <p class="entry-card-meta">Practice projects</p>
+          <span class="entry-card-icon" aria-hidden="true">↗</span>
+        </div>
+        <div class="entry-card-body">
+          <h2>实践项目</h2>
+          <p>Experiments, prototypes, making processes, and built outcomes.</p>
+        </div>
+        <span class="entry-card-cta">进入页面</span>
+      </a>
+
+      <a class="entry-card" href="/ai">
+        <div class="entry-card-top">
+          <p class="entry-card-meta">AI practice</p>
+          <span class="entry-card-icon" aria-hidden="true">↗</span>
+        </div>
+        <div class="entry-card-body">
+          <h2>AI 尝试</h2>
+          <p>Tools, workflows, prompting, prototypes, and applied AI thinking.</p>
+        </div>
+        <span class="entry-card-cta">进入页面</span>
+      </a>
+
+      <a class="entry-card" href="/research">
+        <div class="entry-card-top">
+          <p class="entry-card-meta">Academic research</p>
+          <span class="entry-card-icon" aria-hidden="true">↗</span>
+        </div>
+        <div class="entry-card-body">
+          <h2>学术研究</h2>
+          <p>Questions, papers, references, and evolving research interests.</p>
+        </div>
+        <span class="entry-card-cta">进入页面</span>
+      </a>
+    </section>
+
+    <section class="home-about" aria-labelledby="home-about-title">
+      <div class="home-about-grid">
+        <div class="home-about-copy">
+          <h2 id="home-about-title">About me</h2>
           <p>
-            Replace this with a studio, competition, internship, or research project
-            that best represents your architectural thinking and visual language.
+            我关心设计、技术、AI 与智能环境交汇的地方，也持续观察空间、系统与人的关系如何被重新组织。
+          </p>
+          <p>
+          I am fascinated by the intersection of design, technology, AI and intelligent environments, and I keep observing how the relationships among space, systems and people are being restructured.
+          </p>
+          <p>
+            作品、实验、研究与书写，对我来说是同一件事的不同切面。
+          </p>
+          <p>
+            Works, experiments, research and writing are different facets of one and the same thing to me.
+          </p>
+          <p>
+            这里既展示结果，也保留过程——一些仍在生长中的方法、判断与感受。
+          </p>
+          <p>
+            It presents both outcomes and preserves the process — methodologies, judgments, and sensibilities still in the making.
           </p>
         </div>
-      </article>
 
-      <article class="project-card">
-        <div class="project-year">2024</div>
-        <div>
-          <h3>Project Two</h3>
-          <p>
-            Use this section to present another project with a different scale,
-            method, or narrative emphasis.
-          </p>
+        <div class="home-about-side">
+          <div class="home-about-card">
+            <p class="home-about-label">Focus：Design / AI / Smart Environments / Research</p>
+          </div>
         </div>
-      </article>
-
-      <article class="project-card">
-        <div class="project-year">2023</div>
-        <div>
-          <h3>Project Three</h3>
-          <p>
-            You can later replace these placeholders with real project pages,
-            cover images, and detailed process documentation.
-          </p>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <section class="section">
-    <p class="section-title">Current Use</p>
-    <div class="simple-list">
-      <div class="simple-card">Portfolio for applications and interviews.</div>
-      <div class="simple-card">Archive for research, writing, and process-based work.</div>
-      <div class="simple-card">Long-term personal platform with room to expand.</div>
-    </div>
-  </section>
+        <div class="home-about-actions">
+            <a class="home-inline-link" href="/resume">查看简历</a>
+          </div>
+      </div>
+    </section>
+  </div>
 </BaseLayout>
