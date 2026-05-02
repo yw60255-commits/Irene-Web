@@ -31,6 +31,7 @@
 | 全局焦点 | 焦点样式不统一 | 统一焦点轮廓 2px，accent 颜色 | 对焦点统一化以提升可访问性与美观 | design-tokens-stage1.json | focus.outline | 不统一 → 统一 | 高 | 焦点可见性测试 | 焦点样式规范 |
 | ARIA 要点 | icon-only 按钮缺少 aria-label | icon-only 按钮需 aria-label；错误信息 aria-describedby | ARIA 规范全面覆盖 | design-tokens-stage1.json | aria.iconButtonHasAriaLabel、aria.errorDescribe | 未完全覆盖 → 全部覆盖 | 高 | ARIA 检查清单 | ARIA 使用规范 |
 | ARIA 审核结果 | 本批次已在页面内输出 ARIA 审核面板，记录关键要点 | 面板显示在页面底部或右下角，包含 icon-button aria-label、显式 label、aria-describedby 的落地情况 | 将 ARIA 审核结果作为交付的一部分留存 | - | - | - | 高 | 面板内容核对与验收 | ARIA 审核结果面板文本 | 已落地并供验收核对 |
+| ARIA 报告导出 | ARIA 审核面板提供可拷贝的 Markdown/JSON 报告，以及按钮执行复制 | 将报告以文本形式写入剪贴板，便于归档与审阅 | 通过按钮复制 | - | - | - | 高 | 报告复制功能验证 | ARIA 审核报告（Markdown/JSON）
 | 品牌要素 | 现阶段素材不足，统一风格需要素材 | 待补充 Logo/图标素材 | 品牌统一性提升 | design-tokens-stage1.json | 品牌相关 | 不足 → 补充素材 | 中 | 风格对齐演示、素材清单 |
 
 表格 2：Tokens 草案（示例字段）

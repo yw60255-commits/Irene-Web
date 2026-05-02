@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Simple runtime ARIA audit report (in-page panel)
+  // Simple runtime ARIA audit report (in-page panel) with copy capability
   try {
     const issues = [];
     const iconButtons = document.querySelectorAll('button.icon, button.icon-btn, .icon-button');
@@ -43,9 +43,16 @@ document.addEventListener('DOMContentLoaded', () => {
       // aria-describedby for errors is harder to compute in runtime without markup; skip for now
     });
     let report = '';
+    const mdHeader = '# ARIA Audit Report';
+    const mdSections = issues.length
+      ? issues.map((i, idx) => (idx + 1) + '. ' + i).join('\n')
+      : 'No ARIA issues detected.';
+    const mdReport = mdHeader + '\n\n' + (issues.length ? 'Issues:\n' + mdSections : 'No issues detected.');
+    const jsonReport = JSON.stringify({ timestamp: new Date().toISOString(), issues: issues }, null, 2);
     if (issues.length) {
       report = 'ARIA Audit Issues:\n' + issues.map((i, idx) => (idx + 1) + '. ' + i).join('\n');
     } else {
+      // keep a simple message for non-issues
       report = 'ARIA Audit: No issues detected by basic checks.';
     }
     let panel = document.getElementById('aria-audit-report');
@@ -65,7 +72,35 @@ document.addEventListener('DOMContentLoaded', () => {
       panel.style.color = '#000';
       document.body.appendChild(panel);
     }
-    panel.textContent = report;
+    panel.textContent = mdReport;
+
+    // Add copy button for the acceptance report
+    let copyBtn = document.getElementById('aria-copy-btn');
+    if (!copyBtn) {
+      copyBtn = document.createElement('button');
+      copyBtn.id = 'aria-copy-btn';
+      copyBtn.textContent = '复制 ARIA 报告';
+      copyBtn.style.position = 'fixed';
+      copyBtn.style.bottom = '8px';
+      copyBtn.style.right = '8px';
+      copyBtn.style.marginRight = '8px';
+      copyBtn.addEventListener('click', () => {
+        const toCopy = mdReport + '\n\nJSON:\n' + jsonReport;
+        if (navigator.clipboard && window.isSecureContext) {
+          navigator.clipboard.writeText(toCopy).catch(console.error);
+        } else {
+          // Fallback for insecure contexts
+          const ta = document.createElement('textarea');
+          ta.value = toCopy;
+          document.body.appendChild(ta);
+          ta.focus();
+          ta.select();
+          try { document.execCommand('copy'); } catch(e) { console.error(e); }
+          document.body.removeChild(ta);
+        }
+      });
+      document.body.appendChild(copyBtn);
+    }
   } catch (e) {
     console.warn('ARIA audit panel failed to render', e);
   }
